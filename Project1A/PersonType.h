@@ -20,9 +20,9 @@ class PersonType
 public:
 	PersonType();
 
-	PersonType(const string& newFirstName, const string& newLastName, int newSocialSecurity);
+	PersonType(const string& newFirstName, const string& newLastName, const int newSocialSecurity);
 
-	void setPersonInfo(string& newFirstName, string& newLastName, int newSocialSecurity);
+	void setPersonInfo(const string& newFirstName, const string& newLastName, const int newSocialSecurity);
 
 	string getFirstName() const;
 
