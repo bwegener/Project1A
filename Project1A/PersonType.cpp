@@ -16,7 +16,7 @@ PersonType::PersonType()
 }
 
 // I think I may have done the overloaded constructor wrong
-PersonType::PersonType(const string &newFirstName, const string &newLastName, int newSocialSecurity)
+PersonType::PersonType(const string &newFirstName, const string &newLastName, const int newSocialSecurity)
 {
 	firstName = newFirstName;
 	lastName = newLastName;
@@ -24,10 +24,11 @@ PersonType::PersonType(const string &newFirstName, const string &newLastName, in
 }
 
 // This seems redundant with the overloaded constructor
-void PersonType::setPersonInfo(string& newFirstName, string& newLastName, int newSocialSecurity)
+void PersonType::setPersonInfo(const string& newFirstName, const string& newLastName, const int newSocialSecurity)
 {
-
-
+	firstName = newFirstName;
+	lastName = newLastName;
+	socialSecurity = newSocialSecurity;
 }
 
 string PersonType::getFirstName() const
